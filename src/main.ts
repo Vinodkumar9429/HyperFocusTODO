@@ -25,16 +25,17 @@ inputFields.forEach(()=>{
     const tick = check.querySelector('.check');
     tick?.classList.toggle('hidden');
     if(i == 0){
-      progress.classList.add('w-[34%]')
+      progress.classList.toggle('w-[34%]')
       progressText.textContent = `${i+1}/3 Completed`;
     }
     else if(i == 1){
-      progress.classList.add('w-[68%]')
+      progress.classList.toggle('w-[68%]')
       progressText.textContent = `${i+1}/3 Completed`;
+      keepGoing.textContent = "Almost there, just hang on!";
       
     }
     else{
-      progress.classList.add('w-[100%]')
+      progress.classList.toggle('w-[100%]')
       progressText.textContent = `${i+1}/3 Completed`;
       keepGoing.textContent = "You've done it!";
       
