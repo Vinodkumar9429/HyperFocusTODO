@@ -13,7 +13,7 @@ function inputEmpty (){
 
 
 inputFields.forEach(()=>{
-  checkboxes.forEach((check, i)=>{
+  checkboxes.forEach((check)=>{
     check.addEventListener('click',()=>{
     if(!inputEmpty()){ 
     keepGoing.textContent = "please fill all the inputs"
